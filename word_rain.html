@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rainy wordies</h1>
+        <div class="top-bar">
+            <div>
+                <button id="startBtn">▶ Start</button>
+                <button id="pauseBtn">⏸ Pause</button>
+            </div>
+            <div id="levelBox">Level: 1</div>
+            <div id="scoreBox">Score: 0</div>
+            <select id="languageSelect">
+                <option value="eng">English</option>
+                <option value="thai">ไทย</option>
+            </select>
+            <div class="hp-bar">
+                <span>HP:</span>
+                <div id="hpContainer"></div>
+            </div>
+        </div>
+
+        <div id="gameArea">
+            <button id="startGameBtn" class="start-btn">Start Game</button>
+            <div id="countdown" class="countdown"></div>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="wordInput" placeholder="Type here..."   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+            <button id="submitBtn">⬆</button>
+        </div>
+    </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
